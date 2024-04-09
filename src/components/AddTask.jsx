@@ -42,15 +42,14 @@ function AddTask() {
           onChange={(e) => setProgressValue(e.target.value)}
           value={progressValue}
         >
-          <option value={true}>Completed</option>
-          <option value={false}>Process</option>
+          <option value="true">Completed</option>
+          <option value="false">Process</option>
         </select>
         <span onClick={handleReset} className="reset">
           Reset
         </span>
         <button type="submit">Add Task</button>
       </form>
-      {/* <p>{taskValue}</p> */}
     </section>
   );
 }
